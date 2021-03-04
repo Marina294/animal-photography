@@ -8,7 +8,7 @@
 }
 body {
   font-family: $muli;
-  background: $background-color;
+  background: black;
   color: $text-color;
   font-size: $font-size-18;
   font-weight: $font-weight-400;
@@ -23,20 +23,27 @@ body {
   height: 0;
 }
 
+// .navbar {
+//   background-color:transparent;
+// }
+
+
+
 .main-menu {
   position: fixed;
   width: 100%;
-  height: 4.875rem;
+  // height: 4.875rem;
   padding: 20px 0;
+  padding-top: 30px;
   .logo {
-    height: 35px;
+    height: 45px;
     margin-left: 30px;
   }
   .content {
     float: none;
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
+    // max-width: 1400px;
     margin: 0px auto;
   }
   ul {
@@ -78,7 +85,7 @@ body {
       font-size: $font-size-55;
       line-height: $line-height-h1-h3;
       max-width: 900px;
-      padding: 0px 30px;
+      padding: 0px 0px;
     }
     @media screen and (max-width: 426px) {
       h1 { 
@@ -100,57 +107,6 @@ body {
     }
   }
 
-// button
-.button {
-  text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 6.25rem;
-  &-cart-clear {
-    display: inline-block;
-    font-family: $muli;
-    letter-spacing: 0.03rem;
-    font-size: 1rem;
-    text-align: center;
-    padding: 0.3rem 0.8rem;
-    border-radius: 12.5rem;
-    border: 0.063rem solid $text-color;
-    background: $background-color;
-    margin-top: 2rem;
-    margin-right: 1rem;
-    color: $text-color;
-    cursor: pointer;
-    outline: none;
-  }
-  &-checkout {
-    display: inline-block;
-    font-family: $muli;
-    letter-spacing: 0.06rem;
-    font-size: 1rem;
-    text-align: center;
-    padding: 0.3rem 1.4rem;
-    border-radius: 12.5rem;
-    border: 0.063rem solid $secondary-color;
-    background: $secondary-color;
-    color: $primary-color-A;
-    cursor: pointer;
-    outline: none;
-  }
-  &-more {
-      display: inline-block;
-      font-family: $muli;
-      letter-spacing: 0.06rem;
-      font-size: 1rem;
-      text-align: center;
-      padding: 0.625rem 2.5rem;
-      border-radius: 12.5rem;
-      border: 0.063rem solid $secondary-color;
-      background: $secondary-color;
-      color: $primary-color-A;
-      cursor: pointer;
-      outline: none;
-      margin: auto;
-  }
-}
 
 // section
 .section {
@@ -181,140 +137,6 @@ body {
   }
 }
 
-//product
-.products {
-  text-align: center;
-&-img {
-  display: inline-block;
-  margin: 0rem 0.625rem 0rem 0.625rem;
-  width: 18rem;
-  height: 18rem;
-  border-radius: 1.563rem;
-}
-&-info {
-  text-align: center;  
-  min-width: 18rem;
-}
-&-name {
-  line-height: 0.4rem;
-  padding-top: 1.375rem;
-  padding-bottom: 1rem;  
-}
-&-price {  
-  line-height: 1.5rem;
-  color: $primary-color-A;
-}
-&-button {
-  display: inline-block;
-  font-family: $muli;
-  letter-spacing: 0.08rem;
-  font-size: 0.875rem;
-  padding: 0.25rem 1rem;
-  border-radius: 12.5rem;
-  border: 1px solid $primary-color-A;
-  background: $primary-color-A;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-  margin: 0.75rem 0rem 2rem 0rem;
-}
-}
-@media (min-width: 576px) {
-.products {
-  flex: 0 0 calc(50% - 1rem);
-  margin-bottom: 1rem;
-}
-&-center{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-}
-@media (min-width: 576px) {
-  .products-center{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  & {
-    flex: 0 0 calc(50% - 1rem);
-  }
-  }
-@media (min-width: 600px) {
-  .products{
-    flex: 0 0 calc(33.333% - 1rem);
-  }
-}
-@media (max-width: 1000px) {
-  .products-text{
-    padding-bottom: 0;
-  }
-}
-
-// See more button action
-.productList .singleThumb {
-	display: none;
-  margin: auto;
-}
-ul.productList li.singleThumb {
-	overflow: hidden;
-}
-
-// Our Story
-.our {
-  &-img {
-    text-align: center;
-    
-
-  }
-  &-photo{
-    max-width: 1040px;
-    width: 90%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 1.563rem;
-
-  }
-  &-text p{
-    max-width: 1072px;
-    text-align: center;
-    padding: 35px 16px;
-    margin: auto;
-  }
-}
-
-// location
-.location {
-  &-block {
-    display: inline-block;      
-    text-align: center;
-  }
-  &-block-text {
-    text-align: center;
-  }
-  &-img {
-    text-align: center;
-  }
-  &-photo{
-    max-width: 620px;
-    width: 90%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 1.563rem;
-    text-align: center;
-
-  }
-  &-text p{
-    text-align: left;
-    padding: 35px 16px;
-    color: $text-color;
-    a:link, a:visited {
-      color: $text-color;
-      background-color: transparent;
-      text-decoration: none;
-    }
-  }
-}
 
 .copyright {
   padding-top: 10px;
@@ -332,45 +154,7 @@ ul.productList li.singleThumb {
 
 
 
-
-*, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-.cp_navi {
-	position: relative;
-	overflow: hidden;
-	width: 360px;
-	height:360px;
-}
-.cp_navi #cp_sidenav a {
-	font-size: 20px;
-	position: absolute;
-	left: -95px;
-	width: 110px;
-	height: 54px;
-	padding: 12px 15px;
-	transition: 0.3s;
-	text-decoration: none;
-	color: #ffffff;
-	border-radius: 0 5px 5px 0;
-}
-.cp_navi #cp_sidenav a:hover {
-	left: -10px;
-}
-.cp_navi #home {
-	top: 20px;
-	background-color: #da3c41;
-}
-.cp_navi #news {
-	top: 80px;
-	background-color: #1b2538;
-}
-.cp_navi #contact {
-	top: 140px;
-	background-color: #2e9b72;
-}
-.cp_navi #about {
-	top: 200px;
-	background-color: #a62e7a;
+.img-fluid {
+  max-width: 100%;
+  padding-top: 2rem;
 }
