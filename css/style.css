@@ -10,8 +10,8 @@
 
 body {
   font-family: "muli", sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0d021c), to(#060F1F));
-  background: linear-gradient(to bottom, #0d021c, #060F1F);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d021c), to(#120922));
+  background: linear-gradient(to bottom, #0d021c, #120922);
   color: #a39ead;
   font-size: 1rem;
   font-weight: 400px;
