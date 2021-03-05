@@ -123,7 +123,6 @@ header{
   width: 55%;
   margin: auto;
   position: relative;
-  padding: 30px;
 }
 .image {
   text-align: center;
@@ -138,6 +137,9 @@ header{
   font-size: $h3;
   line-height: 15px;
   }
+}
+.mfp-close-btn-in .mfp-close {
+  color: $white-color; 
 }
 
 .img-fluid {
