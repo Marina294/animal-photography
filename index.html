@@ -39,33 +39,12 @@
         <nav class="main-menu navbar">
           <div class="content">
             <a href="#"><img src="./img/logo-wh.svg" class="logo"></a>
-            <ul>
+            <!-- <ul>
 			      	<li><a href="#about" class="open">About Me</a></li>
-
-
-
-            </ul>
+            </ul> -->
           </div>
         </nav>
 
-        <div id="wrap">
-  
-          <!-- Fixed navbar -->
-          <!-- <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-              <div class="navbar-header">
-
-                <a href="#"><img src="./img/logo-wh.svg" class="logo"></a>
-              </div>
-
-                <ul class="nav navbar-nav">
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-
-            </div>
-          </div> -->
-          
-        </div>
 
         <section class="hero">
           <div class="hero-content">
@@ -80,7 +59,14 @@
 
  <section class="section-photo" id="photo">
   <div class="section-title">
-    <h1></h1>
+    <div id="about" class="popup mfp-hide">
+      <div class="image"><img src="img/IMG_2231.jpg" class="about"></div>
+      <div class="about-text"><h5> Live in Vancouver.<br>
+        Working as a Graphic web designer and learning Front-end development.<br>
+        </h5></div>
+    </div>
+    <a href="#about" class="open"><h3>About Me</h3></a>
+
   </div>
   </section>
 
@@ -208,9 +194,14 @@
 <script>
 jQuery(function($){
     $('.popup-link').magnificPopup({ 
-        type: 'image'
+        type:'image'
     });
+    $('.open').magnificPopup({
+    type: 'inline',
+    preloader: false
 });
+});
+
 </script>
 
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 

@@ -169,12 +169,6 @@ header{
 
 
 
-// @media screen and (max-width: 1023px) {
-// .col-lg-4 {
-//   padding-right: 0;
-//   padding-left: 0;
-// }
-// }
 
 .img-fluid {
   width: 100%;
@@ -189,3 +183,23 @@ header{
 
 
 
+.popup {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  background: #fff;
+  padding: 20px;
+}
+
+
+.image {
+  text-align: center;
+}
+.about {
+  width: 80%;
+  border-radius: 0.5rem;
+}
+
+.about-text {
+  text-align: center;
+}
