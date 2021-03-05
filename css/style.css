@@ -145,20 +145,6 @@ body {
   }
 }
 
-.section-products {
-  margin: auto;
-  text-align: center;
-}
-
-.section-center {
-  margin: auto;
-  max-width: 1040px;
-}
-
-.section-location {
-  text-align: center;
-}
-
 .copyright {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -170,7 +156,11 @@ body {
 }
 
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
   padding-top: 2rem;
+}
+
+.wrap-phots {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,10 +23,6 @@ body {
   height: 0;
 }
 
-// .navbar {
-//   background-color:transparent;
-// }
-
 
 
 .main-menu {
@@ -73,6 +69,7 @@ body {
   background-size: cover;
   height: 100vh;
   display: flex;
+  
   justify-content: center;
   align-items: left;
   flex-flow: column;
@@ -124,17 +121,6 @@ body {
       }
     }
   }
-  &-products {
-    margin: auto;
-    text-align: center;   
-  }
-  &-center {
-    margin: auto;
-    max-width: 1040px;
-  }
-  &-location {
-    text-align: center;
-  }
 }
 
 
@@ -150,11 +136,19 @@ body {
 
 
 
-
-
-
+// @media screen and (max-width: 1023px) {
+// .col-lg-4 {
+//   padding-right: 0;
+//   padding-left: 0;
+// }
+// }
 
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
   padding-top: 2rem;
+}
+
+
+.wrap-phots {
+  overflow: hidden;
 }
