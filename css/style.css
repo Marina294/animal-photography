@@ -25,10 +25,13 @@ body {
   height: 0;
 }
 
+header {
+  position: absolute;
+}
+
 .main-menu {
-  position: fixed;
+  margin-bottom: -100px;
   width: 100%;
-  padding: 20px 0;
   padding-top: 30px;
 }
 
