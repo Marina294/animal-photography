@@ -17,12 +17,8 @@ body {
   letter-spacing: $character-spacing;
 }
 
-.clearfix {
-  zoom: 1;
-  content: " ";
-  clear: both;
-  display: block;
-  height: 0;
+h1 h2 h3 {
+  margin: 0px;
 }
 
 header{
@@ -30,7 +26,8 @@ header{
 }
 
 .main-menu {
-  margin-bottom: -100px;
+  z-index: 10000;
+  position: fixed;
   width: 100%;
   padding-top: 30px;
   .logo {
@@ -75,25 +72,24 @@ header{
   flex-flow: column;
   font-family: $muli;
   &-content {
-    text-align: left;
-    margin: 0px 30px;
+    text-align: center;
     h1 {
       color:white;
       font-size: 30px;
-      line-height: 35px;
+      line-height: 3.5rem;
       font-weight: 800;
     }
     @media screen and (max-width: 426px) {
       h1 { 
         font-size: 22px;
-        line-height: 27px;
+        line-height: 3rem;
         padding: 0px 0px;
       }
     }
     @media screen and (min-width: 1000px) {
       h1 { 
         font-size: 40px;
-        line-height: 44px;
+        line-height: 5rem;
         padding: 0px 0px;
       }
     }
@@ -103,7 +99,7 @@ header{
 .section {
   &-title {
     text-align: center;
-    margin: 3rem 1rem 2rem 1rem;
+    margin: 3rem 1rem 3rem 1rem;
     h2 { 
       font-size: $h2;
       font-weight: 800;
@@ -140,12 +136,19 @@ header{
 }
 .mfp-close-btn-in .mfp-close {
   color: $white-color; 
+  display: none;
 }
 
 .img-fluid {
   width: 100%;
-  padding-top: 2rem;
+  height: 100%;
+  padding: 1.5%;
 }
+
+.col-lg-4 {
+  padding: 0%;
+}
+
 
 .wrap-phots {
   overflow: hidden;
@@ -155,7 +158,7 @@ header{
   padding-bottom: 10px;
   margin-top: 20px;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 2.2px;
   color: $white-color;
 }
